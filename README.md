@@ -1,4 +1,4 @@
-# MC-Product-Card
+# mc-product-card-react-ts
 
 Este es un paquete de pruebas de despliegue NPM
 
@@ -7,7 +7,7 @@ Este es un paquete de pruebas de despliegue NPM
 ## Ejemplo
 
 ```
-import {ProductImage,ProductTitle, ProductButtons, ProductCard } from "mc-product-card"
+import {ProductImage,ProductTitle, ProductButtons, ProductCard } from "mc-product-card-react-ts"
 ```
 
 ```
