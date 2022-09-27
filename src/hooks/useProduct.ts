@@ -9,21 +9,11 @@ export const useProduct = ({onChange, product, value=0, initialValues}:useProduc
   const isMounted = useRef(false)
 
   const increaseBy = (value: number) => {
-  /*
-    console.log("isControlled", isControlled.current)
-    if(isControlled.current){
-      return onChange!({count: value, product}) //onChange! esto es equivalente a poner arriba isControlled.current && onChange
-    }
-    */
+
   
     let newValue = Math.max(counter + value, 0); //Ccon esto se evita que ponga valores negativos
     
-    /*Otra opcion
-    if( initialValues?.maxCount) {
-      newValue = Math.min(newValue, initialValues?.maxCount  );
-    }
-    setCounter(newValue)
-    */
+   
 
     newValue = Math.min(newValue, initialValues?.maxCount || newValue )
     setCounter(newValue);
